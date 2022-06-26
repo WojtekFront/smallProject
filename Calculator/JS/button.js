@@ -60,14 +60,38 @@ switch(this.operation){
     this.secondData=computation;
     this.operation = undefined;
     this.firstData="";
+}
 
+getDisplayNumber(number){
+    const stringNumber= number.toString();
+    const intigerDigits = parseFloat(stringNumber.split('.')[0]);
+    const decimalDigits = stringNumber.split('.')[1];
+let intigerDispaly;
+
+if(isNaN(intigerDigits)){
+    intigerDispaly="";
+}else{
+intigerDispaly =intigerDigits.toLocaleString('en',{
+    maximumFractionDigits:0})
+}
+if(decimalDigits!= null){
+    return `${intigerDispaly}.${decimalDigits}`;
+}else{
+    return intigerDispaly;
+}
 }
 
 updateDisplay(button){
-this.dataSecond.innerText = this.secondData;
-this.dataFirst.innerText = this.firstData;
+this.dataSecond.innerText = this.getDisplayNumber(this.secondData);
+if (this.operation!=null){
+this.dataFirst.innerText = `${this.getDisplayNumber(this.firstData)} ${this.operation}`;
+}else{
+    this.dataFirst.innerText="";
+
 }
 }
+
+}//close class
 
 const numberButtons = document.querySelectorAll('[buttonNumber');
 const operationButtons = document.querySelectorAll('[buttonSign]');
