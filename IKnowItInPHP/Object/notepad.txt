@@ -1,0 +1,4 @@
+1. check comment stdClass();
+https://www.php.net/manual/en/language.types.object.php
+2. I finish here:
+https://www.php.net/manual/en/language.oop5.basic.php
