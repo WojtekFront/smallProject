@@ -1,8 +1,8 @@
 <?php 
-require 'index.php';
-
+require 'conToDatabase.php';
 ?>
-<html lang="en">
+
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +11,15 @@ require 'index.php';
 </head>
 <body>
     <ul>
-    <?php foreach ($storeTasks as $task){ 
-            echo '<li>'.$task->getDescription(); 
-            }
-    ?>
+<?php 
+foreach ($storeTasks as $task){ 
+        if($task->completed){
+            echo '<li><s>'.$task->description.'</s>'; 
+        }else{
+                echo '<li>'.$task->description;
+        }
+}
+?>
 
     </ul>
 </body>

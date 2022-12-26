@@ -1,35 +1,32 @@
 <?php
-require 'functions.php';
+
+//echo $tasks[0]->description;
+
 //require 'index.view.php';
 
+//class Task {
+//    private $description;
 
-class Task {
-    private $description;
+//    public $completed;
 
-    public $completed;
+//    function __construct($description, $completed = false){
+//        $this->description = $description;
+//        $this->completed = $completed;
+//    }
 
+//    public function getDescription(){
+//        return $this->description;
+//    }
 
-    function __construct($description, $completed = false){
-        $this->description = $description;
-        $this->completed = $completed;
-    }
+//    public function getCompleted(){
+//        return $this->completed;
+//    }
+//}
 
-
-    public function getDescription(){
-        return $this->description;
-    }
-
-    public function isComplete(){
-        return $this->completed = true;
-    }
-
-
-}
-
-$storeTasks = [
- new Task('Hello World',false),
- new Task('Go to store',false),
- new Task('Go to store',false),
-];
+//$storeTasks = [
+// new Task('Hello World',false),
+// new Task('Go to big store',true),
+// new Task('Go to store second time',false),
+//];
 
 
