@@ -1,5 +1,5 @@
 <?php 
-require 'conToDatabase.php';
+require 'index.php';
 ?>
 
 <html lang="pl">
@@ -13,10 +13,10 @@ require 'conToDatabase.php';
     <ul>
 <?php 
 foreach ($storeTasks as $task){ 
-        if($task->completed){
-            echo '<li><s>'.$task->description.'</s>'; 
+        if($task->getCompleted()){
+            echo '<li><s>'.$task->getDescription().'</s>'; 
         }else{
-                echo '<li>'.$task->description;
+                echo '<li>'.$task->getDescription();
         }
 }
 ?>
