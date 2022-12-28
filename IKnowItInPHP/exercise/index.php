@@ -1,13 +1,18 @@
 <?php
 
-require 'functions.php';
-require 'conToDatabase.php';
-require 'commandSQL.php';
+require 'database/Connection.php';
+require 'database/QuerySql.php';
 require 'Task.php';
+// require 'functions.php';
 
-$pdo = connectToDb();
 
-$storeTasks = fetchAllTasks($pdo);
+$pdo = Connection::connectToDb();
+
+$query = new QuerySql($pdo);
+
+$storeTasks = $query->selectAll('todos');
+
+
 
 
 
