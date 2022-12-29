@@ -1,16 +1,19 @@
 <?php
 
 require 'database/Connection.php';
-require 'database/QuerySql.php';
+require 'database/QueryBuilder.php';
 require 'Task.php';
-// require 'functions.php';
+//require 'functions.php';
 
 
-$pdo = Connection::connectToDb();
+$pdo = Connection::makeConnection();
 
-$query = new QuerySql($pdo);
+
+$query =  new QueryBuilder($pdo);
 
 $storeTasks = $query->selectAll('todos');
+$tasks = $query->selectAll('todos');
+require 'index.view.php';
 
 
 

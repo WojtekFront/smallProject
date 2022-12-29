@@ -14,9 +14,9 @@ require 'index.php';
 <?php 
 foreach ($storeTasks as $task){ 
         if($task->getCompleted()){
-            echo '<li><s>'.$task->getDescription().'</s>'; 
+            echo '<li><s>'.$task->description.'</s>'; 
         }else{
-                echo '<li>'.$task->getDescription();
+                echo '<li>'.$task->completed;
         }
 }
 ?>

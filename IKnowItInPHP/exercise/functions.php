@@ -1,6 +1,7 @@
 <?php
 
-function dd($inputData){
+function dd($inputData)
+{
     echo '<pre>';
     var_dump($inputData);
     echo '</pre>';

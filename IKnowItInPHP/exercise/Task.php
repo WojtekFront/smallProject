@@ -1,7 +1,7 @@
 <?php 
 class Task {
-    private $description;
-    private $completed;
+    public $description;
+    public $completed;
 
     public function getDescription(){
         return $this->description;
