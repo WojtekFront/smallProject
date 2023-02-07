@@ -8,4 +8,4 @@
 </head>
 <body>
 
-<button onclick="document.location='../index.php'"><-Back to previous panel</button>
+<button type="button" onclick="document.location='../index.php'"><-Back to previous panel</button>

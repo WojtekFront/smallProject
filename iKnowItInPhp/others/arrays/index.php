@@ -7,10 +7,11 @@
     <title>! Work !</title>
 </head>
 <body>
+    <h1> Here are few projects with the array. </h1>
     <ul>
         <?php
             $bookLists= [
-                ['titleA'=>'Show biggest value from array', 'describeA'=>'select the greatest value from table=[1,10,2,3,4,5,6,7,8,9,0]', 'fileA'=>'biggestValue'],
+                ['titleA'=>'Show biggest value from array', 'describeA'=>'select the greatest value from the array = [1, 10, 2, 3, 4, 5, 6, 7, 8, 9, 0]', 'fileA'=>'biggestValue'],
                 
                 ['titleA'=>'', 'describeA'=>'', 'fileA'=>''],
             ];
@@ -20,7 +21,7 @@
         ?>
         <li>
             <?php 
-                    echo'<a href="projects/'.$book["fileA"].'.php">'.$book["titleA"].'</a>';
+                    echo'<a href="projects/'.$book["fileA"].'.php">'.$book["titleA"].'</a> - '.$book["describeA"];
                 }
             ?>
         </li>
