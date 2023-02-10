@@ -1,0 +1,47 @@
+weryfikacja:
+1. sprawdzamy co dostajemy i czy jest to tablica; +
+2. sprawdzamy czy tablica jest pusta +
+3. weryfikujemy pierwszy znak tablicy czy jest to nr lub litera plus spacja lub przecinek +
+4. jeżeli jest numer to sprawdzamy czy wszystkie znaki są numerami i analogicznie do litery plus spacja przecinek +
+5. if the characters are the same then check long. divers by 3 and take last part +
+
+tłumaczenie:
+1. zlecamy tłumaczenie cyfr na znaki +
+2. zlecamy tłumaczenie znaków na cyfry i drukujemy komunikat +
+
+testing array:
+1. empty, 10.07.2022 +
+2. wrong type character $,%."; 10.07.2022 +
+3. wrong value: 12, cce, c1; 10.07.2022 +
+4. corrrect anwear; 10.07.2022 +
+
+
+------------------
+Nokia 3210 alfabet
+"a"=> "2",
+"b"=> "22",
+"c"=> "222",
+"d"=> "3",
+"e"=> "33",
+"f"=> "333",
+"g"=> "4",
+"h"=> "44",
+"i"=> "444",
+"j"=> "5",
+"k"=> "55",
+"l"=> "555",
+"m"=> "6",
+"n"=> "66",
+"o"=> "666",
+"p"=> "7",
+"q"=> "77",
+"r"=> "777",
+"s"=> "7777",
+"t"=> "8", 
+"u"=> "88",
+"v"=> "888",
+"w"=> "9",
+"x"=> "99",
+"y"=> "999",
+"z"=> "9999",
+" "=> "0"
