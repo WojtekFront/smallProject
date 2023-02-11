@@ -1,3 +1,12 @@
+<?php 
+    require_once('projectsElements/headingP.php')
+?>
+
+<h3>Compare strings:</h3>
+<p>Here is compared string "ana" with: "ana", "", "anna", "Ana";</p>
+<br>
+
+
 <?php
 //nie jest to najszybsza oraz najkrótsza wersja. 
 //postanowiłem oddelegować do funkji zadania, które można później edytować
@@ -8,7 +17,12 @@ $zmienna4 = "anna";
 $zmienna5 = "Ana";
 
 
-echo strncmp($zmienna1, $zmienna2, strlen($zmienna2)) . "<br>";
+echo "Czy zmienna \"{$zmienna1}\" i \"{$zmienna2}\" są takie same: " .  (!(strncmp($zmienna1, $zmienna2, strlen($zmienna1))) ? "tak" . "<br>" : "nie" . "<br>");
+echo "Czy zmienna \"{$zmienna1}\" i \"{$zmienna3}\" są takie same: " .  (!(strncmp($zmienna1, $zmienna3, strlen($zmienna1))) ? "tak" . "<br>" : "nie" . "<br>");
+echo "Czy zmienna \"{$zmienna1}\" i \"{$zmienna4}\" są takie same: " .  (!(strncmp($zmienna1, $zmienna4, strlen($zmienna1))) ? "tak" . "<br>" : "nie" . "<br>");
+echo "Czy zmienna \"{$zmienna1}\" i \"{$zmienna5}\" są takie same: " .  (!(strncmp($zmienna1, $zmienna5, strlen($zmienna1))) ? "tak" . "<br>" : "nie" . "<br>");
+
+echo "<br> W tym zadaniu użyłem funkcji <b>strncmp(zmienna1, zmienna2, strlen(zmienna1))</b>, która porównuje dwie zmienne.";
 // czy zmienne istnieją
 function zmiennaIstnieje($z1, $z2)
 {
@@ -34,3 +48,9 @@ function jakieMajaDlugosci($z1, $z2)
 }
 
 // iterowanie dwóch zmiennych i porównywanie
+
+?>
+
+<?php
+    require_once('projectsElements/footerP.php');
+?>
