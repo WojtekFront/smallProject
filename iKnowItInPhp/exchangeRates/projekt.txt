@@ -1,0 +1,53 @@
+1. Plan pracy:
+- strona pobierania wymiany walut,
+- strona z listą pobranych walut
+- strona gdzie odbywają się wymiany
+- lista wymian,
+2. PHP class
+3. Walidacja
+- strona pobierania walut
+  - waluty
+  - czy dobry kurs
+  - kto wysłał żądanie
+  - czy data nie jest wcześniejsza niż aktualna
+  - liczby miejsc po przecinku
+------------------------------
+- strona gdzie odbywa się wymiana
+  - waluta pierwsza
+  - czy dobry kurs waluty 1  
+  - waluta 1
+  - czy dobry kurs waluty 2
+  - waluta 2
+  - czy dobry wynik
+  - kto wysłał żądanie
+3. SQL
+- kurs walut
+  - index
+  - data
+  - kurs
+  - waluta 1,2,3
+  - czy była poprawiana
+- wymiana
+  - waluta
+
+4. JS
+- strona pobierania walut
+  - aktualna data w polu exDate,
+  
+  
+
+
+
+Wymagania:
+1. Utwórz nową bazę danych MySQL i skonfiguruj połączenie z bazą.
+2. Napisz odpowiednie klasy lub metody, które będą odpowiedzialne za komunikację z API NBP i pobranie kursów walut.
+3. Zapisz pobrane kursy walut do bazy danych.
+4. Utwórz klasę lub funkcję, która będzie generować tabelę z kursami walut na podstawie danych z bazy danych.
+5. Stwórz formularz, który umożliwi użytkownikowi wpisanie kwoty oraz wybranie dwóch walut: waluty źródłowej i waluty docelowej.
+6. Napisz odpowiednie klasy lub metody, które będą przewalutowywać podaną kwotę z jednej waluty na drugą, korzystając z danych z bazy danych.
+7. Zapisz wyniki przewalutowań do bazy danych wraz z informacjami o walutach źródłowej, docelowej i przewalutowanej kwocie.
+8. Wyświetl listę ostatnich wyników przewalutowań wraz z informacjami o walutach źródłowej, docelowej i przewalutowanej kwocie. Wykorzystaj dane z bazy danych.
+9. Wykorzystaj podejście obiektowe w kodzie, stosując dobre praktyki związane z programowaniem obiektowym w czystym PHP.
+10.Zadbaj o odpowiednie zabezpieczenie aplikacji, takie jak walidacja danych wejściowych, obsługa błędów itp.
+11.Zwróć uwagę na estetykę pracy i kodu. Staraj się zachować czytelność, odpowiednie formatowanie i nazewnictwo zmiennych.
+12.Podczas oceny rozwiązania będziemy brać pod uwagę:
