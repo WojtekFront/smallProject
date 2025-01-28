@@ -33,7 +33,8 @@ $test=
   }
 
   function countSheep2($arr){
-    return count(array_filter($arr));
+    // return count(array_filter($arr));
+    return array_sum($arr);
   }
   echo countSheep2($test);
 
