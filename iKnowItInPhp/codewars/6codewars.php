@@ -11,6 +11,8 @@ function even_or_odd(int $n): string {
 
 <?php
 function digitize(int $n): array{
-    return array_reverse( str_split((string)$n) );
+    return array_reverse(array_map('intval', str_split((string)$n)));
   }
   ?>
+
+  
