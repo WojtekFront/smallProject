@@ -1,28 +1,24 @@
 <?php
-// Rock Paper Scissors
-// Let's play! You have to return which player won! In case of a draw return Draw!.
+// It's pretty straightforward. Your goal is to create a function that 
+// removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
 
-// Examples(Input1, Input2 --> Output):
-
-// "scissors", "paper" --> "Player 1 won!"
-// "scissors", "rock" --> "Player 2 won!"
-// "paper", "paper" --> "Draw!"
-
-
-
-function rpc ($p1, $p2) {
-  if($p1===$p2){
-    return "Draw!";
+function remove_char(string $s): string {
+  $list_s = str_split($s);
+  $size_s = sizeof($list_s);
+  $answer=[];
+  for($i=0; $i< $size_s ; $i++){
+    if($i !== 0 && $i !==$size_s -1 ){
+        array_push($answer,$list_s[$i]);
+    }
   }
+  $new_answer = implode($answer);
 
-  $beats=[
-    'rock'=>'scissors',
-    'scissors'=>'paper',
-    'paper'=>'rock'
-  ];
-return ($beats[$p1]===$p2 )? "Player 1 won!" : "Player 2 won!";
+
+  return $new_answer; 
 }
 
-echo(rpc("scissors", "paper") );
-echo(rpc("scissors", "rock" ));
-echo(rpc("paper", "paper"));
+
+function remove_char2(string $s): string {
+  return substr($s, 1, -1);
+}
+remove_char("echo echo");
