@@ -1,3 +1,21 @@
+<style>
+.karuzela {
+  width: 64px;
+  height: 64px;
+  background-image: url('karuzela.png');
+  animation: obrot 25s linear infinite; /* Ustawienie animacji */
+}
+
+@keyframes obrot {
+  from {
+    transform: rotate(0deg); /* Początkowy obrót */
+  }
+  to {
+    transform: rotate(360deg); /* Pełny obrót */
+  }
+}
+</style>
+<div class="karuzela"></div>
 <?php
 
 // Our football team has finished the championship.
@@ -35,3 +53,5 @@ function points(array $games): int {
 
 
 echo(points(["3:1", "2:2", "0:1"]));
+
+
