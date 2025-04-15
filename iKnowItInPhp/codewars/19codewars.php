@@ -24,7 +24,6 @@ function solution($str, $ending) {
     if($len_ending === 0) return true;
     $str_end = substr($str, $len_ending );
     return !strcmp($str_end, $ending);
-    // return $str_end."<br>";
   }
 
 
