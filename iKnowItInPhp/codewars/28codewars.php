@@ -6,3 +6,12 @@
 // Examples
 // n = 2; limit = 6 --> [2, 4, 6]
 // n = 2; limit = 5 --> [2, 4]
+
+function findMultiples(int $integer, int $limit): array{
+$answear = [];
+  for($i = $integer; $i< $limit; $i=$i+$integer){
+    $answear[]=$i;
+    }
+    return $answear;
+  }
+  print_r( findMultiples(2,7));
